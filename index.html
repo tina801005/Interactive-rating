@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <title>Interactive Rating</title>
+</head>
+<body>
+    <main class="rating_card">
+        <!-- rating state start -->
+        <div class="rating_state">
+            <div class="star">
+                <img src="https://raw.githubusercontent.com/tina801005/Interactive-rating/949ce8b6fbfa01f1633e907c23907d275e114694/images/icon-star.svg" alt="rating_star">
+            </div>
+            <h1 class="rating_title">How did we do?</h1>
+            <p class="rating_content">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="rating_grade_box">
+                <button class="grade_level" id="lv_1">1</button>
+                <button class="grade_level">2</button>
+                <button class="grade_level">3</button>
+                <button class="grade_level">4</button>
+                <button class="grade_level">5</button>
+            </div>
+            <button class="submit_btn">Submit</button>
+        </div>
+        <!-- rating state end-->
+
+        <!-- thanks state start -->
+        <div class="thanks_state">
+            <div class="thanks_img">
+                <img src="https://raw.githubusercontent.com/tina801005/Interactive-rating/949ce8b6fbfa01f1633e907c23907d275e114694/images/illustration-thank-you.svg" alt=thanksimage">
+            </div>
+            <h2 class="rating_result_text"> You selected ***<!-- Add rating here --> out of 5</h2>
+            <h3 class="thanks_title">Thank you!</h3>
+            <p class="thanks_content">We appreciate you taking the time to give a rating. If you ever need more support, 
+                don't hesitate to get in touch!</p>
+        </div>
+        <!-- thanks state end -->
+    </main>
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
